@@ -5,9 +5,8 @@ import java.util.*;
 public class TopKeywords {
     public static void main(String[] args) {
         List<String> words = Arrays.asList("The man walked the dog", "The lady walked the dog.","Dogs are cool", "Cats are interesting creatures",
-                "Cats and Dogs was an interesting movie.", "The man has a brown dog", "movie are think I like");
-        List<String> keywords = Arrays.asList("dog", "cat", "the", "bla", "blo");
-
+                "Cats and Dogs was an interesting movie.", "The man has a brown dog", "movie are think I like", "the kitty in the kitchen doesnt count");
+        List<String> keywords = Arrays.asList("dog", "cat", "the", "kit");
         int n = 2;
         for (String word: topKeywords(words,keywords, n)) {
             System.out.println(word);
@@ -17,7 +16,7 @@ public class TopKeywords {
     public static List<String> topKeywords(List<String> sentences, List<String> keywords, int n) {
         HashMap<String, Integer> wordCount = new HashMap<>();
         for (String sentence : sentences) {
-            String sanitized = sentence.toLowerCase();
+            List<String> sanitized = Arrays.asList(sentence.toLowerCase().split("\\s+"));
             for (String keyword: keywords) {
                 if (sanitized.contains(keyword)) {
                     wordCount.put(keyword, wordCount.getOrDefault(keyword, 0) + 1);
