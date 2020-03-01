@@ -1,6 +1,8 @@
 package amz;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 /*
@@ -12,7 +14,7 @@ public class ServerUpgrade {
         for (int[] row: servers) {
             Arrays.fill(row, 0);
         }
-//        servers[4][4] = 1;
+        servers[4][4] = 1;
         System.out.println(upgradeServer(servers));
         print(servers);
     }
@@ -61,6 +63,7 @@ public class ServerUpgrade {
             }
         }
         result.servers = servers;
+        List<Integer> x = new ArrayList<>();
         return result;
     }
 
