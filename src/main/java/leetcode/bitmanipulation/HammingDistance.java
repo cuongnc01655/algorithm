@@ -1,4 +1,4 @@
-package leetcode.bitmanipulation;
+package main.java.leetcode.bitmanipulation;
 
 import java.util.Arrays;
 

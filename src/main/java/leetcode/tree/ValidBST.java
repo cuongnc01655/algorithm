@@ -1,6 +1,5 @@
-package leetcode.tree;
+package main.java.leetcode.tree;
 
-import java.util.Queue;
 import java.util.Stack;
 
 public class ValidBST {

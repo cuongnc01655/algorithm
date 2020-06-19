@@ -1,4 +1,4 @@
-package hackerrank.bfs;
+package main.java.bfs;
 
 import java.util.*;
 

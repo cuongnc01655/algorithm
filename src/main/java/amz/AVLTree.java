@@ -1,6 +1,4 @@
-package amz;
-
-import java.util.Map;
+package main.java.amz;
 
 public class AVLTree {
     Node root;

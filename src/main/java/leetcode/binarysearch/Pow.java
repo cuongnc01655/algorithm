@@ -1,4 +1,4 @@
-package leetcode.binarysearch;
+package main.java.leetcode.binarysearch;
 
 public class Pow {
     public static void main(String[] args) {

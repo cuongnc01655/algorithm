@@ -1,9 +1,6 @@
-package leetcode.greedy;
-
-import org.w3c.dom.ls.LSOutput;
+package main.java.leetcode.greedy;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**
