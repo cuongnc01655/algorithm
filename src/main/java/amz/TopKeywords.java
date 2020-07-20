@@ -1,4 +1,4 @@
-package main.java.amz;
+package amz;
 
 import java.util.*;
 

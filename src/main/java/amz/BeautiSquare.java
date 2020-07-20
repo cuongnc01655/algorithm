@@ -1,4 +1,4 @@
-package main.java.amz;
+package amz;
 
 public class BeautiSquare {
     public static void main(String[] args) {
